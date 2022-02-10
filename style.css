@@ -11,6 +11,7 @@
     --bg-color: #F3F4F6;
     --primary-color: #226A80;
     --white-color: #FFF;
+    --black-color: #000;
 }
 
 section{
@@ -25,7 +26,7 @@ section{
 
 .hero{
     position: relative;
-    width: 16rem;
+    width: 15.5rem;
     bottom: 16rem;
     left: 80rem;
 }
@@ -42,7 +43,7 @@ header{
 
 header .logo{
     position: relative;
-    color: #000;
+    color: var(--black-color);
     font-size: 1.875rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -51,7 +52,7 @@ header .logo{
 }
 
 header .navbar a{
-    color: #000;
+    color: var(--black-color);
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
@@ -68,8 +69,8 @@ header .navbar a:hover{
 }
 
 .content{
-    max-width: 650px;
-    margin: 60px 100px;
+    max-width: 39.063rem;
+    margin: 3.75rem 6.25rem;
 }
 
 .content .info h2{
@@ -78,8 +79,8 @@ header .navbar a:hover{
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 2px;
-    line-height: 60px;
-    margin-bottom: 30px;
+    line-height: 3.75rem;
+    margin-bottom: 1.875rem;
 }
 
 .content .info h2 span{
@@ -91,7 +92,7 @@ header .navbar a:hover{
 .content .info p{
     font-size: 1.25rem;
     font-weight: 500;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .content .info-btn{
@@ -101,7 +102,7 @@ header .navbar a:hover{
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border-radius: 5px;
 }
 
@@ -123,7 +124,7 @@ header .navbar a:hover{
 }
 
 .media-icons a:not(:last-child){
-    margin-right: 60px;
+    margin-right: 3.75rem;
 }
 
 .media-icons a:hover{
@@ -146,7 +147,7 @@ label{
 
     label{
         display: block;
-        font-size: 25px;
+        font-size: 1.563rem;
         cursor: pointer;
     }
 
@@ -175,7 +176,7 @@ label{
     #check:checked ~ header .navbar a{
         font-weight: 700;
         margin-right: 0;
-        margin-bottom: 50px;
+        margin-bottom: 3.125rem;
         letter-spacing: 2px;
     }
 
@@ -199,33 +200,33 @@ label{
     }
 
     .content .info h2{
-        font-size: 45px;
-        line-height: 50px;
+        font-size: 2.813rem;
+        line-height: 3.125rem;
     }
 
     .content .info h2 span{
-        font-size: 40px;
+        font-size: 2.5rem;
         font-weight: 600;
     }
 
     .content .info p{
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 }
 
 @media (max-width: 560px){
     .content .info h2{
-        font-size: 35px;
-        line-height: 40px;
+        font-size: 2.188rem;
+        line-height: 2.5rem;
     }
 
     .content .info h2 span{
-        font-size: 30px;
+        font-size: 1.875rem;
         font-weight: 600;
     }
 
     .content .info p{
-        font-size: 14px;
+        font-size: 0.875rem;
     }
     
 }
