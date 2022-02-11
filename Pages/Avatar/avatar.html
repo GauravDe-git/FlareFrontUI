@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Installation</title>
+    <title>Avatar</title>
     <link rel="stylesheet" href="/Pages/documentation.css">
     <link rel="stylesheet" href="/Assets/night-owl.min.css">
+    <link rel="stylesheet" href="/Pages/Avatar/avatar.css">
     <script src="/Assets/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 </head>
@@ -60,21 +61,43 @@
     </nav>
 
     <main class="main-content">
-        <h2 class="main-content-heading"> Installation </h2>
-        <p class="main-content-descr">
-            To Install SkyUI and use it in your projects, simply import the following stylesheet to your CSS or HTML file.
-        </p>
-        
+        <h2 class="main-content-heading">Avatar</h2>
         <pre><code>
-            @import url("components.css");
-            &lt;link rel="stylesheet" href="components.css">
+            @import url("/Pages/Avatar/avatar.css");
+            &lt;link rel="stylesheet" href="/Pages/Avatar/avatar.css">
         </code></pre>
+        <h3 class="main-content-subheading">Avatar with different sizes:</h3>
+        <div class="component-container">
+            <img src="/Assets/AvatarImg1.jpg" alt="" class="avatar avatar-lg">
+            <img src="/Assets/AvatarImg1.jpg" alt="" class="avatar avatar-md">
+            <img src="/Assets/AvatarImg1.jpg" alt="" class="avatar avatar-sm">
+        </div>
 
         <p class="main-content-descr">
-            If you don't want to use all the components, then you can import the individual components. The links to import individual components can be found in the respective pages.
+            Round avatars have 3 sizes. These are <strong>avatar-lg(7rem)</strong>, <strong>avatar-md(5rem)</strong> and <strong>avatar-sm(3rem)</strong>.
         </p>
         
-    </main>
+        <div class="component-container">
+            <img src="/Assets/AvatarImg1.jpg" alt="" class="avatar avatar-square">
+        </div>
 
+        <p class="main-content-descr">
+            Square avatars need a <strong>avatar-square</strong> class to be used.
+        </p>
+
+        <h4 class="main-content-subheading"> Put the avatar class inside img tag to use this component.</h4>
+
+        <pre><code>
+            &lt; img src="" alt="" class="avatar avatar-lg">
+            &lt; img src="" alt="" class="avatar avatar-md">
+            &lt; img src="" alt="" class="avatar avatar-sm">
+            &lt; img src="" alt="" class="avatar avatar-square">
+        </code></pre>
+        
+        <footer class="footer">
+
+        </footer>
+    </main>
+    
 </body>
 </html>

@@ -1,0 +1,28 @@
+.avatar{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar-lg{
+    width: 7rem;
+    height: 7rem;
+    
+}
+
+.avatar-md{
+    width: 5rem;
+    height: 5rem;
+    
+}
+
+.avatar-sm{
+    width: 3rem;
+    height: 3rem;
+    
+}
+
+.avatar-square{
+    border-radius: 0%;
+}
