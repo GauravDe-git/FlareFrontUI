@@ -1,0 +1,28 @@
+.alert{
+    background-color: #93C5FD;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    width: fit-content;
+}
+
+.alert-info{
+    background-color: #93C5FD;
+    border-left: 0.5rem solid #60A5FA;
+}
+
+.alert-success{
+    background-color: #6EE7B7;
+    border-left: 0.5rem solid #34D399;
+}
+
+.alert-warning{
+    background-color: #FCD34D;
+    border-left: 0.5rem solid #FBBF24; 
+}
+
+.alert-danger{
+    background-color: #FCA5A5;
+    border-left: 0.5rem solid #F87171;  
+}
