@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badge</title>
+    <link rel="stylesheet" href="/Pages/documentation.css">
+    <link rel="stylesheet" href="/Assets/night-owl.min.css">
+    <link rel="stylesheet" href="/Pages/Badge/badge.css">
+    <script src="/Assets/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <header>
+        <h2> <a href="#" class="logo">Logo</a></h2>
+        <div class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/Pages/Avatar/avatar.html">Documentation</a>
+            <a href="https://github.com/GauravDe-git/SkyUI">GitHub</a>
+        </div>   
+    </header>
+    <nav class="nav-page">
+        <h4 class="nav-page-heading">Getting Started</h4>
+        <div class="nav-page-subheading">
+            <a href="/Pages/documentation.html" >Installation</a>
+        </div>
+        <h4 class="nav-page-heading">Components</h4>
+            <ul class="nav-page-ul">
+                <li class="nav-page-li">
+                    <a href="/Pages/Avatar/avatar.html">Avatar</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="/Pages/Alert/alert.html">Alert</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="/Pages/Badge/badge.html">Badge</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Button</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Card</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Image</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Input</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Lists</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Modal</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Rating</a>
+                </li>
+            </ul>
+    </nav>
+
+    <main class="main-content">
+        <h2 class="main-content-heading">Badge</h2>
+        <pre><code>
+            @import url("/Pages/Badge/badge.css");
+            &lt;link rel="stylesheet" href="/Pages/Badge/badge.css">
+        </code></pre>
+        <h3 class="main-content-subheading">Badge on Icons:</h3>
+        <div class="component-container">
+            <div class="badge">
+                <img src="/Assets/cart.svg" alt="">
+                <div class="badge-count">5</div>
+            </div>
+            <div class="badge">
+                <img src="/Assets/mail.svg" alt="">
+                <div class="badge-count">9</div>
+            </div>
+        </div>
+        <p class="main-content-descr"> To use the badge component, use the class 'badge' inside a div and insert an img tag to use the specific badge icon. You can also use another div with class 'badge-count' to show a number.</p>
+        <h3 class="main-content-subheading">Badge on Avatars:</h3>
+        <div class="component-container">
+            <div class="badge">
+                <img class="avatar" src="/Assets/AvatarImg1.jpg" alt="">
+                <div class="badge-status online"></div>
+            </div>
+            <div class="badge">
+                <img class="avatar" src="/Assets/AvatarImg1.jpg" alt="">
+                <div class="badge-status doNotDisturb"></div>
+            </div>
+            <div class="badge">
+                <img class="avatar" src="/Assets/AvatarImg1.jpg" alt="">
+                <div class="badge-status offline"></div>
+            </div>
+        </div>
+        <p class="main-content-descr"> There are 3 types of badge on avatar. Use a div with class 'badge-status online','badge-status doNotDisturb', or 'badge-status offline' to show the current status of the user.</p>
+        <pre><code>
+            //Badge on Icons.
+
+            &lt;div class="badge">
+                &lt;img src="/Assets/cart.svg" alt="">
+                &lt;div class="badge-count">5</div>
+            </div>
+            &lt;div class="badge">
+                &lt;img src="/Assets/mail.svg" alt="">
+                &lt;div class="badge-count">9</div>
+            </div>
+            //Badge on Avatar.
+
+            &lt;div class="badge">
+                &lt;img class="avatar" src="/Assets/AvatarImg1.jpg" alt="">
+                &lt;div class="badge-status online"></div>
+            </div>
+            &lt;div class="badge">
+                &lt;img class="avatar" src="/Assets/AvatarImg1.jpg" alt="">
+                &lt;div class="badge-status doNotDisturb"></div>
+            </div>
+            &lt;div class="badge">
+                &lt;img class="avatar" src="/Assets/AvatarImg1.jpg" alt="">
+                &lt;div class="badge-status offline"></div>
+            </div>
+        </code></pre>
+        <footer class="footer">
+
+        </footer>
+    </main>
