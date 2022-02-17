@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <link rel="stylesheet" href="/Pages/documentation.css">
+    <link rel="stylesheet" href="/Assets/night-owl.min.css">
+    <link rel="stylesheet" href="/Pages/Button/button.css">
+    <script src="/Assets/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <header>
+        <h2> <a href="#" class="logo">Logo</a></h2>
+        <div class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/Pages/Avatar/avatar.html">Documentation</a>
+            <a href="https://github.com/GauravDe-git/SkyUI">GitHub</a>
+        </div>   
+    </header>
+    <nav class="nav-page">
+        <h4 class="nav-page-heading">Getting Started</h4>
+        <div class="nav-page-subheading">
+            <a href="/Pages/documentation.html" >Installation</a>
+        </div>
+        <h4 class="nav-page-heading">Components</h4>
+            <ul class="nav-page-ul">
+                <li class="nav-page-li">
+                    <a href="/Pages/Avatar/avatar.html">Avatar</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="/Pages/Alert/alert.html">Alert</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="/Pages/Badge/badge.html">Badge</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="/Pages/Button/button.html">Button</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Card</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Image</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Input</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Lists</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Modal</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Rating</a>
+                </li>
+            </ul>
+    </nav>
+
+    <main class="main-content">
+        <h2 class="main-content-heading">Button</h2>
+        <pre><code>
+            @import url("/Pages/Button/button.css");
+            &lt;link rel="stylesheet" href="/Pages/Button/button.css">
+        </code></pre>
+        <h3 class="main-content-subheading">Primary Button:</h3>
+        <div class="component-container">
+            <button type="button" class="btn btn-primary"> Primary Color </button>
+            <button type="button" class="btn btn-secondary"> Secondary Color </button>
+            <button type="button" class="btn btn-success"> Success Color </button>
+            <button type="button" class="btn btn-warning"> Warning Color </button>
+            <button type="button" class="btn btn-danger"> Danger Color </button>
+        </div>
+        <p class="main-content-descr">To use the Primary button component; use the class 'btn' followed by the type of button i.e. 'btn-primary', 'btn-danger', etc. inside a button tag.</p>
+        <pre><code>
+            &lt;button type="button" class="btn btn-primary"> Primary Color &lt;/button>
+            &lt;button type="button" class="btn btn-secondary"> Secondary Color &lt;/button>
+            &lt;button type="button" class="btn btn-success"> Success Color &lt;/button>
+            &lt;button type="button" class="btn btn-warning"> Warning Color &lt;/button>
+            &lt;button type="button" class="btn btn-danger"> Danger Color &lt;/button>
+        </code></pre>
+        <h3 class="main-content-subheading">Link Button:</h3>
+        <div class="component-container">
+            <button type="button" class="btn btn-primary btn-link"> 
+                <a href="link"> Link Button </a>    
+            </button>
+            <button type="button" class="btn btn-secondary btn-link"> 
+                <a href="link"> Link Button </a>    
+            </button>
+        </div>
+        <p class="main-content-descr">To use the Link button; add the 'btn-link' class, and add &lt;a> tag inside the button tag to include the link.</p>
+        <pre><code>
+            &lt;button type="button" class="btn btn-primary btn-link"> 
+                &lt;a href="link"> Link Button &lt;/a>    
+            &lt;/button>
+            &lt;button type="button" class="btn btn-secondary btn-link"> 
+                &lt;a href="link"> Link Button &lt;/a>    
+            &lt;/button>
+        </code></pre>
+        <h3 class="main-content-subheading">Icon Button:</h3>
+        <div class="component-container">
+            <button type="button" class="btn btn-icon btn-primary"> 
+                <img src="/Assets/mail.svg"> Icon button 
+            </button>
+            <button type="button" class="btn btn-icon btn-secondary"> 
+                <img src="/Assets/cart.svg"> Icon button 
+            </button>
+        </div>
+        <p class="main-content-descr">To use the Icon button; add the 'btn-icon' class, and add &lt;img> tag inside the button tag to include the icon.</p>
+        <pre><code>
+            &lt;button type="button" class="btn btn-icon btn-primary"> 
+                &lt;img src="/Assets/mail.svg"> Icon button 
+            &lt;/button>
+            &lt;button type="button" class="btn btn-icon btn-secondary"> 
+                &lt;img src="/Assets/cart.svg"> Icon button 
+            &lt;/button>
+        </code></pre>
+        <h3 class="main-content-subheading">Floating Action Button:</h3>
+        <div class="component-container">
+            <button type="button" class="btn btn-warning btn-float-demo"> 
+                <img src="/Assets/icons8-page-up-button-50.png">
+            </button>
+        </div>
+        <p class="main-content-descr">To use the Floating action button; add the 'btn-float' class, and add &lt;img> tag inside the button tag to include the floating action icon.</p>
+        <pre><code>
+            &lt;button type="button" class="btn btn-warning btn-float"> 
+                &lt;img src="/...">
+            &lt;/button>
+        </code></pre>
+        <footer class="footer">
+
+        </footer>
+    </main>

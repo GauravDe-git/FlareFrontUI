@@ -13,16 +13,16 @@
 }
 
 .alert-success{
-    background-color: #6EE7B7;
+    background-color: var(--success-color);
     border-left: 0.5rem solid #34D399;
 }
 
 .alert-warning{
-    background-color: #FCD34D;
+    background-color: var(--warning-color);
     border-left: 0.5rem solid #FBBF24; 
 }
 
 .alert-danger{
-    background-color: #FCA5A5;
+    background-color: var(--danger-color);
     border-left: 0.5rem solid #F87171;  
 }

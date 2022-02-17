@@ -12,6 +12,9 @@
     --primary-color: #308aff;
     --secondary-color: #eaeeff;
     --header-bg-color: #F3F4F6;
+    --success-color: #6EE7B7;
+    --warning-color: #FCD34D;
+    --danger-color: #FCA5A5;
 }
 
 body{
