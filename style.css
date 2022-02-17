@@ -76,7 +76,7 @@ header .navbar a:hover{
 .content .info h2{
     color: var(--primary-color);
     font-size: 3.438rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 800;
     letter-spacing: 2px;
     line-height: 3.75rem;
