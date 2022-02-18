@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="/Pages/documentation.css">
+    <link rel="stylesheet" href="/Assets/night-owl.min.css">
+    <link rel="stylesheet" href="/Pages/Card/card.css">
+    <script src="/Assets/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <header>
+        <h2> <a href="#" class="logo">Logo</a></h2>
+        <div class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/Pages/Avatar/avatar.html">Documentation</a>
+            <a href="https://github.com/GauravDe-git/SkyUI">GitHub</a>
+        </div>   
+    </header>
+    <nav class="nav-page">
+        <h4 class="nav-page-heading">Getting Started</h4>
+        <div class="nav-page-subheading">
+            <a href="/Pages/documentation.html" >Installation</a>
+        </div>
+        <h4 class="nav-page-heading">Components</h4>
+            <ul class="nav-page-ul">
+                <li class="nav-page-li">
+                    <a href="/Pages/Avatar/avatar.html">Avatar</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="/Pages/Alert/alert.html">Alert</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="/Pages/Badge/badge.html">Badge</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="/Pages/Button/button.html">Button</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="/Pages/Card/card.html">Card</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Image</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Input</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Lists</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Modal</a>
+                </li>
+                <li class="nav-page-li">
+                    <a href="">Rating</a>
+                </li>
+            </ul>
+    </nav>
+
+    <main class="main-content">
+        <h2 class="main-content-heading">Cards</h2>
+        <pre><code>
+            @import url("/Pages/Card/card.css");
+            &lt;link rel="stylesheet" href="/Pages/Card/card.css">
+        </code></pre>
+        <h3 class="main-content-subheading">Text only Card:</h3>
+        <div class="component-container">
+            <div class="card">
+                <div class="card-title"> Example Title </div>
+                <div class="card-text"> This is an example text for this card. This card component is a very simple text only card
+                    that doesn't use any images, badges or avatars.
+                </div>
+            </div>
+        </div>
+        <p class="main-content-descr">To use a text only card, use a div with class 'card'. Inside this dive use two other divs with class 'card-title' and 'card-text' for the title and text respectively.</p>
+        <pre><code>
+            &lt;div class="card">
+                &lt;div class="card-title"> Example Title &lt;/div>
+                &lt;div class="card-text"> This is an example text for this card. This card component is a very simple text only card
+                    that doesn't use any images, badges or avatars.
+                &lt;/div>
+            &lt;/div>
+        </code></pre>
+        <h3 class="main-content-subheading">Card with badges:</h3>
+        <div class="component-container">
+            <div class="badge">
+                <div class="badge-count">5</div>
+                <div class="card">
+                    <img src="/Assets/AvatarImg1.jpg" class="card-img">
+                    <div class="card-text"> This is an example text for this card. This card component is an avatar card
+                        that has image, badge and button.
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary"> Read More </button>
+                        <button type="button" class="btn btn-secondary"> Bookmark </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="main-content-descr">To use card with badges, the 'badge' class is needed. Put the card component inside the badge class.The 'card-img' tag can be used with an img tag to include a card image.The 'card-footer' class is used to include buttons at the bottom of the card.</p>
+        <pre><code>
+            &lt;div class="badge">
+                &lt;div class="badge-count">5</div>
+                &lt;div class="card">
+                    &lt;img src="/Assets/AvatarImg1.jpg" class="card-img">
+                    &lt;div class="card-text"> This is an example text for this card. This card component is an avatar card
+                        that has image, badge and button.
+                    &lt;/div>
+                    &lt;div class="card-footer">
+                        &lt;button type="button" class="btn btn-primary"> Read More </button>
+                        &lt;button type="button" class="btn btn-secondary"> Bookmark </button>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        </code></pre>
+        
+
+    <footer class="footer">
+
+    </footer>
+    </main>
+</body>
