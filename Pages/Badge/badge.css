@@ -35,9 +35,9 @@
     background-color: #EF4444;
     color: #fff;
     border-radius: 50%;
-    font-size: 70%;
+    font-size: 80%;
     font-weight: 800;
-    min-width: 0.813rem;
-    min-height: 0.813rem;
+    min-width: 1rem;
+    min-height: 1rem;
     text-align: center;
 }

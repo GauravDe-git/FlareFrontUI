@@ -1,0 +1,41 @@
+@import url(/Pages/Badge/badge.css);
+@import url(/Pages/Button/button.css);
+
+.card{
+    background-color: #F9FAFB;
+    height: max-content;
+    width: 18.75rem;
+    border-radius: 0.15rem;
+    box-shadow: rgba(80, 80, 134, 0.411) 0px 2px 5px -1px
+}
+
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+.card-text{
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 0.5rem;
+}
+
+.card-avatar{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.card-img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 0.5rem;
+}
