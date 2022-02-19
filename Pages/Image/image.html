@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avatar</title>
+    <title>image</title>
     <link rel="stylesheet" href="/Pages/documentation.css">
     <link rel="stylesheet" href="/Assets/night-owl.min.css">
-    <link rel="stylesheet" href="/Pages/Avatar/avatar.css">
+    <link rel="stylesheet" href="/Pages/Image/image.css">
     <script src="/Assets/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 </head>
@@ -61,43 +61,31 @@
     </nav>
 
     <main class="main-content">
-        <h2 class="main-content-heading">Avatar</h2>
+        <h2 class="main-content-heading">Image</h2>
         <pre><code>
-            @import url("/Pages/Avatar/avatar.css");
-            &lt;link rel="stylesheet" href="/Pages/Avatar/avatar.css">
+            @import url("/Pages/Image/image.css");
+            &lt;link rel="stylesheet" href="/Pages/Image/image.css">
         </code></pre>
-        <h3 class="main-content-subheading">Avatar with different sizes:</h3>
+        <h3 class="main-content-subheading">Round Image:</h3>
         <div class="component-container">
-            <img src="/Assets/AvatarImg1.jpg" alt="" class="avatar avatar-lg">
-            <img src="/Assets/AvatarImg1.jpg" alt="" class="avatar avatar-md">
-            <img src="/Assets/AvatarImg1.jpg" alt="" class="avatar avatar-sm">
+            <img src="/Assets/imgExample.jpg" alt="" class="img-round">
         </div>
-
-        <p class="main-content-descr">
-            Round avatars have 3 sizes. These are <strong>avatar-lg(7rem)</strong>, <strong>avatar-md(5rem)</strong> and <strong>avatar-sm(3rem)</strong>.
-        </p>
-        
-        <div class="component-container">
-            <img src="/Assets/AvatarImg1.jpg" alt="" class="avatar avatar-square">
-        </div>
-
-        <p class="main-content-descr">
-            Square avatars need a <strong>avatar-square</strong> class to be used.
-        </p>
-
-        <h4 class="main-content-subheading"> Put the avatar class inside img tag to use this component.</h4>
-
+        <p class="main-content-descr">Round Images can be used by using the class 'img-round' inside an img tag.</p>
         <pre><code>
-            &lt; img src="" alt="" class="avatar avatar-lg">
-            &lt; img src="" alt="" class="avatar avatar-md">
-            &lt; img src="" alt="" class="avatar avatar-sm">
-            &lt; img src="" alt="" class="avatar avatar-square">
+            &lt;img src="/Assets/imgExample.jpg" alt="" class="img-round">
+        </code></pre>
+        <h3 class="main-content-subheading">Responsive Image:</h3>
+        <div class="component-container">
+            <img src="/Assets/imgExample3.jpg" alt="" class="img-responsive">
+        </div>
+        <p class="main-content-descr">Responsive Images can be used by using the class 'img-responsive' inside an img tag.</p>
+        <pre><code>
+            &lt;img src="/Assets/imgExample.jpg" alt="" class="img-responsive">
         </code></pre>
         
-        <footer class="footer">
 
-        </footer>
+    <footer class="footer">
+
+    </footer>
     </main>
-    
 </body>
-</html>
