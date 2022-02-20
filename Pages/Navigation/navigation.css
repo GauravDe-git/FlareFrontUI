@@ -1,0 +1,20 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.nav-aside{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.nav-ul > li {
+    display: inline-block;
+    margin-right: 1.25rem;
+}
