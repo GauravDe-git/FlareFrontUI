@@ -21,6 +21,12 @@
     padding: 0.5rem;
 }
 
+.card-descr{
+    font-size: 0.8rem;
+    font-weight: 100;
+    padding: 0.2rem;
+}
+
 .card-avatar{
     display: flex;
     align-items: center;
@@ -31,6 +37,15 @@
     width: 100%;
     height: auto;
     background-size: cover;
+}
+
+.card-icon{
+    padding: 0;
+    margin-top: -2rem;
+    position: relative;
+    bottom: 22rem;
+    left: 16rem;
+    cursor: pointer;
 }
 
 .card-footer{
