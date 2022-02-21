@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Installation</title>
+    <title>Modal</title>
     <link rel="stylesheet" href="/Pages/documentation.css">
     <link rel="stylesheet" href="/Assets/night-owl.min.css">
+    <link rel="stylesheet" href="/Pages/Modal/modal.css">
     <script src="/Assets/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 </head>
@@ -66,21 +67,36 @@
     </nav>
 
     <main class="main-content">
-        <h2 class="main-content-heading"> Installation </h2>
-        <p class="main-content-descr">
-            To Install FlareFrontUI and use it in your projects, simply import the following stylesheet to your CSS or HTML file.
-        </p>
-        
+        <h2 class="main-content-heading">Modal:</h2>
         <pre><code>
-            @import url("https://flarefrontui.netlify.app/pages/components.css");
-            &lt;link rel="stylesheet" href="https://flarefrontui.netlify.app/pages/components.css">
+            @import url("/Pages/Modal/modal.css");
+            &lt;link rel="stylesheet" href="/Pages/Modal/modal.css">
         </code></pre>
+        <div class="component-container">
+            <button id="open" class="btn btn-primary"> Open Modal </button>
+            <div class="modal-container" id="modal_container">
+                <div class="modal">
+                    <h1>This is a modal</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, modi.</p>
+                    <button id="close " class="btn btn-primary">Close Modal</button>
+                </div>
+            </div>
+        </div>
+        <p class="main-content-descr">Modal component can be used using the class "modal-container" along with the same id. Inside this div, use another class called "modal".</p>
+        <pre><code>
+            &lt;button id="open" class="btn btn-primary"> Open Modal </button>
+            &lt;div class="modal-container" id="modal_container">
+                &lt;div class="modal">
+                    &lt;h1>This is a modal</h1>
+                    &lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, modi.</p>
+                    &lt;button id="close " class="btn btn-primary">Close Modal</button>
+                &lt;/div>
+            &lt;/div>
+       </code></pre>
+    
 
-        <p class="main-content-descr">
-            If you don't want to use all the components, then you can import the individual components. The links to import individual components can be found in the respective pages.
-        </p>
-        
+    <footer class="footer">
+
+    </footer>
     </main>
-
 </body>
-</html>
