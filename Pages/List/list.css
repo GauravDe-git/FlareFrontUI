@@ -1,0 +1,22 @@
+.list{
+    padding: 1rem;
+    width: 15rem;
+    max-height: 18rem;
+}
+
+.list li{
+    list-style: none;
+    padding: 1rem;
+}
+
+.list-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+}
+
+.list-stack li{
+    margin: 1rem;
+    border-radius: 0.2rem;
+    background-color: white;
+}
