@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avatar</title>
+    <title>Grid</title>
     <link rel="stylesheet" href="/Pages/documentation.css">
     <link rel="stylesheet" href="/Assets/night-owl.min.css">
-    <link rel="stylesheet" href="/Pages/Avatar/avatar.css">
+    <link rel="stylesheet" href="/Pages/Grid/grid.css">
     <script src="/Assets/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <script src="https://kit.fontawesome.com/223f475189.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -73,43 +74,64 @@
     </nav>
 
     <main class="main-content">
-        <h2 class="main-content-heading">Avatar</h2>
+        <h2 class="main-content-heading">Grid:</h2>
         <pre><code>
-            @import url("/Pages/Avatar/avatar.css");
-            &lt;link rel="stylesheet" href="/Pages/Avatar/avatar.css">
+            @import url("/Pages/Grid/grid.css");
+            &lt;link rel="stylesheet" href="/Pages/Grid/grid.css">
         </code></pre>
-        <h3 class="main-content-subheading">Avatar with different sizes:</h3>
+        <h3 class="main-content-subheading">2 item Grid:</h3>
         <div class="component-container">
-            <img src="/Assets/AvatarImg1.jpg" alt="" class="avatar avatar-lg">
-            <img src="/Assets/AvatarImg1.jpg" alt="" class="avatar avatar-md">
-            <img src="/Assets/AvatarImg1.jpg" alt="" class="avatar avatar-sm">
+            <div class="grid grid-2-item">
+                <div class="grid-aside">
+                  1 of 2
+                </div>
+                <div class="grid-main-content">
+                  2 of 2
+                </div>
+              </div>   
         </div>
-
-        <p class="main-content-descr">
-            Round avatars have 3 sizes. These are <strong>avatar-lg(7rem)</strong>, <strong>avatar-md(5rem)</strong> and <strong>avatar-sm(3rem)</strong>.
-        </p>
-        
-        <div class="component-container">
-            <img src="/Assets/AvatarImg1.jpg" alt="" class="avatar avatar-square">
-        </div>
-
-        <p class="main-content-descr">
-            Square avatars need a <strong>avatar-square</strong> class to be used.
-        </p>
-
-        <h4 class="main-content-subheading"> Put the avatar class inside img tag to use this component.</h4>
-
         <pre><code>
-            &lt; img src="" alt="" class="avatar avatar-lg">
-            &lt; img src="" alt="" class="avatar avatar-md">
-            &lt; img src="" alt="" class="avatar avatar-sm">
-            &lt; img src="" alt="" class="avatar avatar-square">
+            &lt;div class="grid grid-2-item">
+                &lt;div class="grid-aside">
+                  1 of 2
+                &lt;/div>
+                &lt;div class="grid-main-content">
+                  2 of 2
+                &lt;/div>
+            &lt;/div> 
         </code></pre>
+        <h3 class="main-content-subheading">3 item Grid:</h3>
+        <div class="component-container">
+            <div class="grid grid-3-item">
+                <div class="grid-aside">
+                  1 of 3
+                </div>
+                <div class="grid-main-content">
+                  2 of 3
+                </div>
+                <div class="grid-aside">
+                    3 of 3
+                  </div>
+              </div>   
+        </div>
+        <pre><code>
+            &lt;div class="grid grid-3-item">
+                &lt;div class="grid-aside">
+                  1 of 2
+                &lt;/div>
+                &lt;div class="grid-main-content">
+                  2 of 2
+                &lt;/div>
+                &lt;div class="grid-aside">
+                    3 of 3
+                  &lt;/div>
+            &lt;/div> 
+        </code></pre>
+       
         
-        <footer class="footer">
+        
+    <footer class="footer">
 
-        </footer>
+    </footer>
     </main>
-    
 </body>
-</html>
