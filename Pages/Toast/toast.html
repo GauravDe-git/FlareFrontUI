@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avatar</title>
+    <title>Toast</title>
     <link rel="stylesheet" href="/Pages/documentation.css">
     <link rel="stylesheet" href="/Assets/night-owl.min.css">
-    <link rel="stylesheet" href="/Pages/Avatar/avatar.css">
+    <link rel="stylesheet" href="/Pages/toast/toast.css">
     <script src="/Assets/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <script src="https://kit.fontawesome.com/223f475189.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -73,43 +74,51 @@
     </nav>
 
     <main class="main-content">
-        <h2 class="main-content-heading">Avatar</h2>
+        <h2 class="main-content-heading">Toast:</h2>
         <pre><code>
-            @import url("/Pages/Avatar/avatar.css");
-            &lt;link rel="stylesheet" href="/Pages/Avatar/avatar.css">
+            @import url("/Pages/toast/toast.css");
+            &lt;link rel="stylesheet" href="/Pages/toast/toast.css">
         </code></pre>
-        <h3 class="main-content-subheading">Avatar with different sizes:</h3>
         <div class="component-container">
-            <img src="/Assets/AvatarImg1.jpg" alt="" class="avatar avatar-lg">
-            <img src="/Assets/AvatarImg1.jpg" alt="" class="avatar avatar-md">
-            <img src="/Assets/AvatarImg1.jpg" alt="" class="avatar avatar-sm">
+            <div class="wrapper">
+                <div class="toast">
+                    <div class="content">
+                        <div class="icon">
+                            <i class="fa-solid fa-wifi"></i>
+                        </div>
+                        <div class="details">
+                            <span> You are back online! </span>
+                            <p>Internet is connected
+                            </p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
         </div>
-
-        <p class="main-content-descr">
-            Round avatars have 3 sizes. These are <strong>avatar-lg(7rem)</strong>, <strong>avatar-md(5rem)</strong> and <strong>avatar-sm(3rem)</strong>.
-        </p>
-        
-        <div class="component-container">
-            <img src="/Assets/AvatarImg1.jpg" alt="" class="avatar avatar-square">
-        </div>
-
-        <p class="main-content-descr">
-            Square avatars need a <strong>avatar-square</strong> class to be used.
-        </p>
-
-        <h4 class="main-content-subheading"> Put the avatar class inside img tag to use this component.</h4>
+        <p class="component-descr">The toast component can be used using the "wrapper" class. Inside this class use the"toast" class. Insert the "content" class inside.</p>
 
         <pre><code>
-            &lt; img src="" alt="" class="avatar avatar-lg">
-            &lt; img src="" alt="" class="avatar avatar-md">
-            &lt; img src="" alt="" class="avatar avatar-sm">
-            &lt; img src="" alt="" class="avatar avatar-square">
+            &lt;div class="wrapper">
+                &lt;div class="toast">
+                    &lt;div class="content">
+                        &lt;div class="icon">
+                            &lt;i class="fa-solid fa-wifi"></i>
+                        &lt;/div>
+                        &lt;div class="details">
+                            &lt;span> You are back online! </span>
+                            &lt;p>Internet is connected
+                            &lt;/p>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;i class="fa-solid fa-xmark"></i>
+                &lt;/div>
+            &lt;/div>
         </code></pre>
         
-        <footer class="footer">
+        
+    <footer class="footer">
 
-        </footer>
+    </footer>
     </main>
-    
 </body>
-</html>

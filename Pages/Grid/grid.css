@@ -1,0 +1,20 @@
+.grid {
+    display: grid;
+    gap: 1rem;
+  }
+.grid-2-item {
+    grid-template-columns: repeat(2, 1fr);
+}
+  
+.grid-aside {
+    background-color: rgb(182, 182, 182);
+    padding: 1rem;
+}
+  
+.grid-main-content {
+    background-color: rgb(182, 182, 182);
+    padding: 1rem;
+}
+.grid-3-item {
+    grid-template-columns: repeat(3, 1fr);
+}
