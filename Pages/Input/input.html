@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Installation</title>
+    <title>Input</title>
     <link rel="stylesheet" href="/Pages/documentation.css">
     <link rel="stylesheet" href="/Assets/night-owl.min.css">
+    <link rel="stylesheet" href="/Pages/Input/input.css">
     <script src="/Assets/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 </head>
@@ -60,21 +61,57 @@
     </nav>
 
     <main class="main-content">
-        <h2 class="main-content-heading"> Installation </h2>
-        <p class="main-content-descr">
-            To Install SkyUI and use it in your projects, simply import the following stylesheet to your CSS or HTML file.
-        </p>
-        
+        <h2 class="main-content-heading">Input:</h2>
         <pre><code>
-            @import url("https://flarefrontui.netlify.app/pages/components.css");
-            &lt;link rel="stylesheet" href="https://flarefrontui.netlify.app/pages/components.css">
+            @import url("/Pages/Input/input.css");
+            &lt;link rel="stylesheet" href="/Pages/Input/input.css">
         </code></pre>
+        <h3 class="main-content-subheading">Basic text Input:</h3>
+        <div class="component-container">
+            <form>
+                <label >EmailID :</label>
+                <input type="text" class="input-box" placeholder="Enter your username">
 
-        <p class="main-content-descr">
-            If you don't want to use all the components, then you can import the individual components. The links to import individual components can be found in the respective pages.
-        </p>
+                <label >Password : </label>
+                <input type="text" class="input-box" placeholder="Enter your password">
+            </form>
+        </div>
+        <p class="main-content-descr">Basic Input is used with an input tag, along with an 'input-box' class.</p>
+        <pre><code>
+            &lt;form>
+                &lt;label >EmailID :</label>
+                &lt;input type="text" class="input-box" placeholder="Enter your username">
+                &lt;label >Password : </label>
+                &lt;input type="text" class="input-box" placeholder="Enter your password">
+            &lt;/form>
+       </code></pre>
+       <h3 class="main-content-subheading">Validation and error styles:</h3>
+        <div class="component-container">
+            <form>
+                <label >Success :</label>
+                <input type="text" class="input-box input-success" placeholder="Success state">
+
+                <label >Warning : </label>
+                <input type="text" class="input-box input-warning" placeholder="Warning state">
+
+                <label >Danger : </label>
+                <input type="text" class="input-box input-danger" placeholder="Danger state">
+            </form>
+        </div>
+        <p class="main-content-descr">Validation and error style inputs are used with an input tag, along with an 'input-box' and 'input-success','input-danger' or 'input-warning' class.</p>
+        <pre><code>
+            &lt;form>
+                &lt;label >Success :</label>
+                &lt;input type="text" class="input-box input-success" placeholder="Success state">
+                &lt;label >Warning : </label>
+                &lt;input type="text" class="input-box input-danger" placeholder="Warning state">
+            &lt;/form>
+       </code></pre>
+       
         
-    </main>
 
+    <footer class="footer">
+
+    </footer>
+    </main>
 </body>
-</html>
