@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Installation</title>
+    <title>Rating</title>
     <link rel="stylesheet" href="/Pages/documentation.css">
     <link rel="stylesheet" href="/Assets/night-owl.min.css">
+    <link rel="stylesheet" href="/Pages/Rating/rating.css">
     <script src="/Assets/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <script src="https://kit.fontawesome.com/223f475189.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -66,21 +68,29 @@
     </nav>
 
     <main class="main-content">
-        <h2 class="main-content-heading"> Installation </h2>
-        <p class="main-content-descr">
-            To Install FlareFrontUI and use it in your projects, simply import the following stylesheet to your CSS or HTML file.
-        </p>
-        
+        <h2 class="main-content-heading">Rating:</h2>
         <pre><code>
-            @import url("https://flarefrontui.netlify.app/pages/components.css");
-            &lt;link rel="stylesheet" href="https://flarefrontui.netlify.app/pages/components.css">
+            @import url("/Pages/Rating/rating.css");
+            &lt;link rel="stylesheet" href="/Pages/Rating/rating.css">
         </code></pre>
-
-        <p class="main-content-descr">
-            If you don't want to use all the components, then you can import the individual components. The links to import individual components can be found in the respective pages.
-        </p>
         
-    </main>
+        <div class="component-container">
+            <i class="fa-solid fa-star fa-3x checked"></i>
+            <i class="fa-solid fa-star fa-3x checked"></i>
+            <i class="fa-solid fa-star fa-3x checked"></i>
+            <i class="fa-solid fa-star fa-3x"></i>
+            <i class="fa-solid fa-star fa-3x"></i>
+        </div>
+        <p class="main-content-descr">Rating component is essential in e-commerce websites. This component needs font-awesome kit to be used. Use the "checked" class to lit a star.</p>
+        <pre><code>
+            &lt;i class="fa-solid fa-star fa-3x checked">&lt;/i>
+            &lt;i class="fa-solid fa-star fa-3x checked">&lt;/i>
+            &lt;i class="fa-solid fa-star fa-3x checked">&lt;/i>
+            &lt;i class="fa-solid fa-star fa-3x">&lt;/i>
+            &lt;i class="fa-solid fa-star fa-3x">&lt;/i>
+       </code></pre>
+    <footer class="footer">
 
+    </footer>
+    </main>
 </body>
-</html>
