@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,56 +10,59 @@
     <link rel="stylesheet" href="/Assets/night-owl.min.css">
     <link rel="stylesheet" href="/Pages/Card/card.css">
     <script src="/Assets/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
+    <script>
+        hljs.highlightAll();
+    </script>
     <script src="https://kit.fontawesome.com/223f475189.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
-        <h2> <a href="#" class="logo">FlareFrontUI</a></h2>
+        <h2> <a href="/index.html" class="logo">FlareFrontUI</a></h2>
         <div class="navbar">
             <a href="/index.html">Home</a>
             <a href="/Pages/Avatar/avatar.html">Documentation</a>
             <a href="https://github.com/GauravDe-git/SkyUI">GitHub</a>
-        </div>   
+        </div>
     </header>
     <nav class="nav-page">
         <h4 class="nav-page-heading">Getting Started</h4>
         <div class="nav-page-subheading">
-            <a href="/Pages/documentation.html" >Installation</a>
+            <a href="/Pages/documentation.html">Installation</a>
         </div>
         <h4 class="nav-page-heading">Components</h4>
-            <ul class="nav-page-ul">
-                <li class="nav-page-li">
-                    <a href="/Pages/Avatar/avatar.html">Avatar</a>
-                </li>
-                <li class="nav-page-li">
-                    <a href="/Pages/Alert/alert.html">Alert</a>
-                </li>
-                <li class="nav-page-li">
-                    <a href="/Pages/Badge/badge.html">Badge</a>
-                </li>
-                <li class="nav-page-li">
-                    <a href="/Pages/Button/button.html">Button</a>
-                </li>
-                <li class="nav-page-li">
-                    <a href="/Pages/Card/card.html">Card</a>
-                </li>
-                <li class="nav-page-li">
-                    <a href="/Pages/Image/image.html">Image</a>
-                </li>
-                <li class="nav-page-li">
-                    <a href="/Pages/Input/input.html">Input</a>
-                </li>
-                <li class="nav-page-li">
-                    <a href="/Pages/Navigation/navigation.html">Navigation</a>
-                </li>
-                <li class="nav-page-li">
-                    <a href="">Modal</a>
-                </li>
-                <li class="nav-page-li">
-                    <a href="">Rating</a>
-                </li>
-            </ul>
+        <ul class="nav-page-ul">
+            <li class="nav-page-li">
+                <a href="/Pages/Avatar/avatar.html">Avatar</a>
+            </li>
+            <li class="nav-page-li">
+                <a href="/Pages/Alert/alert.html">Alert</a>
+            </li>
+            <li class="nav-page-li">
+                <a href="/Pages/Badge/badge.html">Badge</a>
+            </li>
+            <li class="nav-page-li">
+                <a href="/Pages/Button/button.html">Button</a>
+            </li>
+            <li class="nav-page-li">
+                <a href="/Pages/Card/card.html">Card</a>
+            </li>
+            <li class="nav-page-li">
+                <a href="/Pages/Image/image.html">Image</a>
+            </li>
+            <li class="nav-page-li">
+                <a href="/Pages/Input/input.html">Input</a>
+            </li>
+            <li class="nav-page-li">
+                <a href="/Pages/Navigation/navigation.html">Navigation</a>
+            </li>
+            <li class="nav-page-li">
+                <a href="">Modal</a>
+            </li>
+            <li class="nav-page-li">
+                <a href="">Rating</a>
+            </li>
+        </ul>
     </nav>
 
     <main class="main-content">
@@ -71,12 +75,14 @@
         <div class="component-container">
             <div class="card">
                 <div class="card-title"> Example Title </div>
-                <div class="card-text"> This is an example text for this card. This card component is a very simple text only card
+                <div class="card-text"> This is an example text for this card. This card component is a very simple text
+                    only card
                     that doesn't use any images, badges or avatars.
                 </div>
             </div>
         </div>
-        <p class="main-content-descr">To use a text only card, use a div with class 'card'. Inside this dive use two other divs with class 'card-title' and 'card-text' for the title and text respectively.</p>
+        <p class="main-content-descr">To use a text only card, use a div with class 'card'. Inside this dive use two
+            other divs with class 'card-title' and 'card-text' for the title and text respectively.</p>
         <pre><code>
             &lt;div class="card">
                 &lt;div class="card-title"> Example Title &lt;/div>
@@ -101,7 +107,9 @@
                 </div>
             </div>
         </div>
-        <p class="main-content-descr">To use card with badges, the 'badge' class is needed. Put the card component inside the badge class.The 'card-img' tag can be used with an img tag to include a card image.The 'card-footer' class is used to include buttons at the bottom of the card.</p>
+        <p class="main-content-descr">To use card with badges, the 'badge' class is needed. Put the card component
+            inside the badge class.The 'card-img' tag can be used with an img tag to include a card image.The
+            'card-footer' class is used to include buttons at the bottom of the card.</p>
         <pre><code>
             &lt;div class="badge">
                 &lt;div class="badge-count">5</div>
@@ -123,7 +131,8 @@
                 <img src="/Assets/earphones.jpg" class="card-img">
                 <i class="fa-solid fa-heart card-icon"></i>
                 <div class="card-title">Earphones</div>
-                <div class="card-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, doloremque!</div>
+                <div class="card-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, doloremque!
+                </div>
                 <div class="card-text"> Rs. 399/-
                 </div>
                 <div class="card-footer">
@@ -132,11 +141,63 @@
                 </div>
             </div>
         </div>
-        <p class="main-content-descr">To use an eCommerce card, use a div with class 'card'. Inside this div use three other divs with class 'card-title', 'card-descr' and 'card-text' for the title ,description and text respectively.Add card-footer to add buttons.</p>
-        
+        <p class="main-content-descr">To use an eCommerce card, use a div with class 'card'. Inside this div use three
+            other divs with class 'card-title', 'card-descr' and 'card-text' for the title ,description and text
+            respectively.Add card-footer to add buttons.</p>
+        <pre><code>
+            &lt;div class="card">
+                &lt;img src="/Assets/earphones.jpg" class="card-img">
+                &lt;i class="fa-solid fa-heart card-icon"></i>
+                &lt;div class="card-title">Earphones</div>
+                &lt;div class="card-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, doloremque!</div>
+                &lt;div class="card-text"> Rs. 399/-
+                &lt;/div>
+                &lt;div class="card-footer">
+                    &lt;button type="button" class="btn btn-primary"> Add to Cart </button>
+                    &lt;button type="button" class="btn btn-secondary"> Wishlist </button>
+                &lt;/div>
+            &lt;/div>
+        </code></pre>
+        <h3 class="main-content-subheading">Responsive Horizontal Card:</h3>
+        <div class="component-container">
+            <div class="card-horizontal">
+                <div class="card-horizontal-box">
+                    <div class="card-title">
+                        <h2>Premium Hoody</h2>
+                        <h4>INR 4,900/- </h4>
+                    </div>
+                    <img src="/Assets/imgExample.jpg" alt="">
+                    <div class="card-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, repellendus.</p>
+                        <a href="/"><button type="button" class="btn btn-primary"> Remove from Cart </button></a>
+                        <a href="/"><button type="button" class="btn btn-secondary"> Add to wishlist </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="main-content-descr">To use responsive horizontal cards, use the class 'card-horizontal'. Inside this
+            class put another div and use the class 'card-horizontal-box'. Put all your card content such as
+            'card-title', 'card-text' and image inside this div.</p>
+        <pre><code>
+            &lt;div class="card-horizontal">
+                &lt;div class="card-horizontal-box">
+                    &lt;div class="card-title">
+                        &lt;h2>Premium Hoodie&lt;/h2>
+                         &lt;h4>INR 4,900/- &lt;/h4>
+                    &lt;/div>
+                    &lt;img src="/Assets/imgExample.jpg" alt="">
+                    &lt;div class="card-text">
+                        &lt;p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, repellendus.</p>
+                        &lt;a href="/"><button type="button" class="btn btn-primary"> Remove from Cart </button></a>
+                        &lt;a href="/"><button type="button" class="btn btn-secondary"> Add to wishlist </button></a>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        </code></pre>
 
-    <footer class="footer">
 
-    </footer>
+        <footer class="footer">
+
+        </footer>
     </main>
 </body>
