@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Installation</title>
+    <title>List</title>
     <link rel="stylesheet" href="/Pages/documentation.css">
     <link rel="stylesheet" href="/Assets/night-owl.min.css">
+    <link rel="stylesheet" href="/Pages/List/list.css">
     <script src="/Assets/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 </head>
@@ -66,21 +67,48 @@
     </nav>
 
     <main class="main-content">
-        <h2 class="main-content-heading"> Installation </h2>
-        <p class="main-content-descr">
-            To Install FlareFrontUI and use it in your projects, simply import the following stylesheet to your CSS or HTML file.
-        </p>
-        
+        <h2 class="main-content-heading">List:</h2>
         <pre><code>
-            @import url("https://flarefrontui.netlify.app/pages/components.css");
-            &lt;link rel="stylesheet" href="https://flarefrontui.netlify.app/pages/components.css">
+            @import url("/Pages/List/list.css");
+            &lt;link rel="stylesheet" href="/Pages/List/list.css">
         </code></pre>
+        <h3 class="main-content-subheading">Normal List:</h3>
+        <div class="component-container">
+            <ul class="list">
+                <div class="list-title">Cities</div>
+                <li>Kolkata</li>
+                <li>Bangalore</li>
+                <li>Chennai</li>
+            </ul>
+        </div>
+        <p class="main-content-descr">List component can be used with the class "list" in the ul tag."list-title" has to be used in a div tag to showcase the list heading.</p>
+        <pre><code>
+            &lt;ul class="list">
+                &lt;div class="list-title">Cities&lt;/div>
+                &lt;li>Kolkata&lt;/li>
+                &lt;li>Bangalore&lt;/li>
+                &lt;li>Chennai&lt;/li>
+            &lt;/ul>
+       </code></pre>
+       <h3 class="main-content-subheading">Stacked List:</h3>
+       <div class="component-container">
+           <ul class="list list-stack">
+               <li>Notification</li>
+               <li>Notification</li>
+               <li>Notification</li>
+           </ul>
+       </div>
+       <p class="main-content-descr">Stacked List component can be used with the class "list-stack" in the ul tag along with the "list" class.</p>
+       <pre><code>
+           &lt;ul class="list list-stack">
+               &lt;li>Notification&lt;/li>
+               &lt;li>Notification&lt;/li>
+               &lt;li>Notification&lt;/li>
+           &lt;/ul>
+      </code></pre>
 
-        <p class="main-content-descr">
-            If you don't want to use all the components, then you can import the individual components. The links to import individual components can be found in the respective pages.
-        </p>
-        
+    <footer class="footer">
+
+    </footer>
     </main>
-
 </body>
-</html>
